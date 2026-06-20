@@ -1,0 +1,40 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build output
+bin/
+obj/
+out/
+
+## .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## Rider / JetBrains
+.idea/
+*.sln.iml
+
+## Node 
+node_modules/
+
+## Logs
+*.log
+
+## Publish output
+publish/
+wwwroot/lib/
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Secrets
+appsettings.Development.json

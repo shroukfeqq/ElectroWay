@@ -1,0 +1,6 @@
+@ElctroWay_HostAddress = http://localhost:5172
+
+GET {{ElctroWay_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
