@@ -11,9 +11,9 @@ namespace ElctroWay.Models.Identity
 
             public int UserId { get; set; }
 
-            public VerificationStatus VerificationStatus { get; set; }
+        public VerificationStatus VerificationStatus { get; set; } = VerificationStatus.Pending;
 
-            public DateTime? ReviewedAt { get; set; }
+        public DateTime? ReviewedAt { get; set; }
 
             public int? ReviewedBy { get; set; }
 
