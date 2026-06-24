@@ -6,6 +6,12 @@ using ElctroWay.Models.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using ElctroWay.Repositories.Implementations;
+using ElctroWay.Repositories.Interfaces;
+using ElctroWay.Services.Implementations;
+using ElctroWay.Services.Interfaces;
+using ElctroWay.Service.Implementations;
+using ElctroWay.Service.Interfaces;
 
 
 namespace ElctroWay
@@ -58,6 +64,14 @@ namespace ElctroWay
         }
     });
             });
+
+
+
+            builder.Services.AddScoped<IAuthRepository, AuthRepository>();
+
+            builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<IOcrService, OcrService>();
             //===========ConnectionString===================
             builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(

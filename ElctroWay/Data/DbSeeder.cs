@@ -9,6 +9,7 @@
             var services = scope.ServiceProvider;
 
             await RoleSeeder.SeedRolesAsync(services);
+            await AdminSeeder.SeedAdminAsync(services);
         }
     }
 }

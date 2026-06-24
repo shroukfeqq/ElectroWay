@@ -20,7 +20,7 @@ namespace ElctroWay.Data
         // DbSets
         public DbSet<ProviderProfile> ProviderProfiles { get; set; }
         public DbSet<ProviderDocument> ProviderDocuments { get; set; }
-
+        public DbSet<OtpCode> OtpCodes { get; set; }
         public DbSet<Station> Stations { get; set; }
         public DbSet<StationImage> StationImages { get; set; }
 
